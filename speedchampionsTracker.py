@@ -14,18 +14,19 @@ class LegoTrackerApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Lego Speed Champions Tracker")
-        self.root.geometry("750x600")  # Erhöhen der Höhe für die Statistik
+        self.root.geometry("750x600")  # Increase height for statistics
         
         self.lego_data = self.load_data()
-        self.filtered_data = self.lego_data  # Speichert gefilterte Daten
-        self.selected_index = None  # Speichert den Index des ausgewählten Eintrags
+        self.filtered_data = self.lego_data  # Store filtered data
+        self.selected_index = None  # Store the index of the selected entry
         
-        self.filter_own_var = tk.BooleanVar()  # Initialisieren der filter_own_var
+        self.filter_own_var = tk.BooleanVar()  # Initialize filter_own_var
         self.create_widgets()
         self.populate_listbox()
-        self.update_statistics()  # Initiale Statistik anzeigen
+        self.update_statistics()  # Display initial statistics
     
     def load_data(self):
+        # Load data from JSON file
         if os.path.exists(self.DATA_FILE):
             with open(self.DATA_FILE, "r", encoding="utf-8") as file:
                 try:
@@ -38,16 +39,19 @@ class LegoTrackerApp:
         return []
 
     def extract_euro_price(self, price_str):
+        # Extract euro price from string
         match = re.search(r'€\d+(\.\d{2})?', price_str)
         return match.group(0) if match else price_str
 
     def create_widgets(self):
+        # Create all the widgets
         self.create_input_frame()
         self.create_listbox_frame()
         self.create_filter_frame()
         self.create_statistics_frame()
 
     def create_input_frame(self):
+        # Create input frame for data entry
         self.input_frame = tk.Frame(self.root)
         self.input_frame.pack(side=tk.LEFT, padx=20, pady=10, fill=tk.Y)
         
@@ -64,6 +68,7 @@ class LegoTrackerApp:
         self.own_checkbox.grid(row=len(self.FIELDS), column=1, pady=2, padx=5)
 
     def create_listbox_frame(self):
+        # Create listbox frame to display data
         self.listbox_frame = tk.Frame(self.root)
         self.listbox_frame.pack(side=tk.RIGHT, padx=20, pady=10, fill=tk.BOTH, expand=True)
         
@@ -87,6 +92,7 @@ class LegoTrackerApp:
         self.listbox.bind("<<ListboxSelect>>", self.load_selected_entry)
 
     def create_filter_frame(self):
+        # Create filter frame for filtering data
         self.filter_frame = tk.Frame(self.input_frame)
         self.filter_frame.grid(row=len(self.FIELDS) + 1, columnspan=2, pady=10)
         
@@ -141,6 +147,7 @@ class LegoTrackerApp:
         self.apply_filter_button.grid(row=2, column=0, pady=5)
 
     def create_statistics_frame(self):
+        # Create statistics frame to display statistics
         self.stats_frame = tk.Frame(self.input_frame)
         self.stats_frame.grid(row=len(self.FIELDS) + 2, columnspan=2, pady=10)
         
@@ -148,6 +155,7 @@ class LegoTrackerApp:
         self.stats_label.pack()
     
     def add_or_edit_entry(self):
+        # Add or edit an entry
         new_entry = {field: self.entries[field].get() for field in self.FIELDS}
         new_entry["Owned"] = self.own_var.get()
         
@@ -162,6 +170,7 @@ class LegoTrackerApp:
         self.update_statistics()  # Update statistics
     
     def delete_entry(self):
+        # Delete an entry
         selected_index = self.listbox.curselection()
         if not selected_index:
             messagebox.showwarning("Delete not possible", "Please select an entry!")
@@ -174,12 +183,13 @@ class LegoTrackerApp:
         self.update_statistics()  # Update statistics
     
     def save_data(self):
-        # Sort data alphabetically by brand
+        # Save data to JSON file
         self.lego_data.sort(key=lambda x: x["Brand"])
         with open(self.DATA_FILE, "w", encoding="utf-8") as file:
             json.dump(self.lego_data, file, indent=4, ensure_ascii=False)
     
     def populate_listbox(self, filter_field=None, filter_value=None):
+        # Populate listbox with data
         self.listbox.delete(0, tk.END)
         for item in self.filtered_data:
             own_status = "✅" if item.get("Owned", False) else "❌"
@@ -187,6 +197,7 @@ class LegoTrackerApp:
         self.update_statistics()  # Update statistics
     
     def load_selected_entry(self, event):
+        # Load selected entry into input fields
         selected_index = self.listbox.curselection()
         if not selected_index:
             return
@@ -198,6 +209,7 @@ class LegoTrackerApp:
         self.own_var.set(selected_item.get("Owned", False))
     
     def update_filter_field(self, event):
+        # Update filter field based on selected filter option
         selected_field = self.filter_option.get()
         self.filter_entry.grid_remove()
         self.brand_dropdown.grid_remove()
@@ -239,7 +251,7 @@ class LegoTrackerApp:
             self.filter_entry.grid()
     
     def apply_filter(self):
-        """ Wendet den ausgewählten Filter auf die Liste der LEGO-Sets an. """
+        # Apply the selected filter to the LEGO sets list
         filter_field = self.filter_option.get()
         filter_value = self.filter_value_var.get()
 
@@ -276,10 +288,11 @@ class LegoTrackerApp:
         else:
             self.filtered_data = [item for item in self.lego_data if filter_value.lower() in str(item.get(filter_field, "")).lower()]
 
-        # Aktualisiert die Liste mit den gefilterten Daten
+        # Update the list with the filtered data
         self.populate_listbox()
 
     def clear_filter(self):
+        # Clear the applied filter
         self.filter_option.set("")
         self.filter_value_var.set("")
         self.filter_own_var.set(False)
@@ -289,6 +302,7 @@ class LegoTrackerApp:
         self.populate_listbox()
     
     def show_pie_chart(self):
+        # Show pie chart of brand distribution
         brand_counter = Counter(item["Brand"] for item in self.filtered_data)
         labels = brand_counter.keys()
         sizes = brand_counter.values()
@@ -301,6 +315,7 @@ class LegoTrackerApp:
         plt.show()
     
     def update_statistics(self):
+        # Update statistics based on filtered data
         total_parts = sum(int(item["Piece Count"]) for item in self.filtered_data if isinstance(item["Piece Count"], int) or (isinstance(item["Piece Count"], str) and item["Piece Count"].isdigit()))
         total_price = sum(float(item["Price"].replace('€', '').replace(',', '.')) for item in self.filtered_data if item["Price"].replace('€', '').replace(',', '.').replace('.', '', 1).isdigit())
         total_cars = sum(int(item["Car Count"]) for item in self.filtered_data if isinstance(item["Car Count"], int) or (isinstance(item["Car Count"], str) and item["Car Count"].isdigit()))
