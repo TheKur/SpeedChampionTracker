@@ -1,69 +1,69 @@
 # Lego Speed Champions Tracker
 
-## 📄 Projektbeschreibung
-Dieses Programm ist ein **Lego Speed Champions Tracker**, mit dem du deine Sammlung von Lego Speed Champions-Sets verwalten kannst. Die Anwendung ermöglicht es dir, Sets zu **hinzufügen**, **bearbeiten**, **löschen**, und **zu filtern**. Zudem werden **Statistiken** zur Sammlung angezeigt und eine **grafische Darstellung** in Form eines Kreisdiagramms zur Verteilung der Marken angeboten.
+## 📄 Project Description
+This program is a **Lego Speed Champions Tracker**, allowing you to manage your collection of Lego Speed Champions sets. The application enables you to **add**, **edit**, **delete**, and **filter** sets. Additionally, **statistics** about the collection are displayed, and a **graphical representation** in the form of a pie chart is available to show brand distribution.
 
-Die Daten werden in einer JSON-Datei (`lego_speed_champions.json`) gespeichert und können jederzeit aktualisiert werden.
+The data is stored in a JSON file (`lego_speed_champions.json`) and can be updated at any time.
 
-## 📚 Funktionen
-### 1. **Hinzufügen & Bearbeiten von Einträgen**
-- Neue Lego-Sets können über die Eingabemaske hinzugefügt werden.
-- Bereits existierende Sets können durch Auswahl in der Liste bearbeitet werden.
-- Änderungen werden in der JSON-Datei gespeichert.
+## 📚 Features
+### 1. **Adding & Editing Entries**
+- New Lego sets can be added through the input form.
+- Existing sets can be edited by selecting them from the list.
+- Changes are saved in the JSON file.
 
-### 2. **Löschen von Einträgen**
-- Markiere einen Eintrag in der Liste und drücke auf "Delete", um ihn zu entfernen.
-- Das Löschen eines Eintrags ist unwiderruflich.
+### 2. **Deleting Entries**
+- Select an entry in the list and click "Delete" to remove it.
+- Deleting an entry is irreversible.
 
-### 3. **Filterfunktion**
-- Filtere die Liste anhand folgender Kriterien:
-  - **Marke** (z. B. Ferrari, Porsche, Audi)
-  - **Breite** (6 oder 8 Noppen)
-  - **Erscheinungsdatum** (z. B. 03.2024)
-  - **Teileanzahl** (mit Auswahl ob größer oder kleiner als eine bestimmte Anzahl)
-  - **Anzahl der Autos im Set**
-  - **Besitzt du das Set?** (Checkbox-Filter)
-- Die Filterung erfolgt über Dropdown-Menüs und Eingabefelder.
+### 3. **Filtering Function**
+- Filter the list based on the following criteria:
+  - **Brand** (e.g., Ferrari, Porsche, Audi)
+  - **Width** (6 or 8 studs)
+  - **Release Date** (e.g., 03.2024)
+  - **Piece Count** (with an option to filter greater or lesser than a certain amount)
+  - **Number of Cars in the Set**
+  - **Owned?** (Checkbox filter)
+- Filtering is performed via dropdown menus and input fields.
 
-### 4. **Statistiken**
-- Gesamtanzahl an **Teilen** in der Sammlung.
-- Gesamtpreis der Sets.
-- Gesamtanzahl der **Autos** in der Sammlung.
-- Statistiken werden automatisch nach jeder Änderung aktualisiert.
+### 4. **Statistics**
+- Total number of **pieces** in the collection.
+- Total price of the sets.
+- Total number of **cars** in the collection.
+- Statistics are updated automatically after every change.
 
-### 5. **Kreisdiagramm der Markenverteilung**
-- Zeigt eine grafische Aufteilung der Lego-Sets nach Marke.
-- Ermöglicht eine visuelle Analyse der Sammlung.
+### 5. **Pie Chart for Brand Distribution**
+- Displays a graphical breakdown of Lego sets by brand.
+- Provides a visual analysis of the collection.
 
-## 🛠️ Installation & Start
-### **Voraussetzungen**
-- **Python 3.x** installiert
-- **Benötigte Bibliotheken:** `tkinter`, `matplotlib`, `json`, `os`
-- Falls `matplotlib` nicht installiert ist, kann es mit folgendem Befehl nachinstalliert werden:
+## 🛠️ Installation & Setup
+### **Requirements**
+- **Python 3.x** installed
+- **Required libraries:** `tkinter`, `matplotlib`, `json`, `os`
+- If `matplotlib` is not installed, install it using the following command:
   ```sh
   pip install matplotlib
-  ```
 
-### **Start der Anwendung**
-1. Stelle sicher, dass sich `speedchampionsTracker.py` und `lego_speed_champions.json` im gleichen Verzeichnis befinden.
-2. Öffne ein Terminal und führe das Skript aus:
+
+### **Starting the Application**
+1. Ensure that `speedchampionsTracker.py` and `lego_speed_champions.json` are in the same directory.
+2. Open a terminal and run the script:
    ```sh
    python speedchampionsTracker.py
-   ```
-3. Die Benutzeroberfläche öffnet sich und du kannst deine Lego-Sammlung verwalten.
 
-## 🔧 Technische Details
-- **GUI**: Erstellt mit `tkinter`
-- **Datenverwaltung**: JSON-Datei als persistenter Speicher
-- **Filterung**: Dynamisch über `tkinter`-Widgets
-- **Diagramme**: Erstellt mit `matplotlib`
-- **Automatische Preisformatierung**: Sucht nach Preisen im `€xx.xx`-Format mit regulären Ausdrücken (`re`-Modul)
+3. The graphical user interface will open, allowing you to manage your Lego collection.
 
-## 💡 Hinweise zur Nutzung
-- Beim Bearbeiten oder Hinzufügen eines Sets müssen alle Pflichtfelder ausgefüllt werden.
-- Die JSON-Datei wird **automatisch aktualisiert**, Änderungen sind nach einem Neustart weiterhin verfügbar.
-- Falls Probleme auftreten, überprüfe die **JSON-Datei** auf korrekte Formatierung.
+## 🔧 Technical Details
+- **GUI**: Built with `tkinter`
+- **Data Management**: JSON file as a persistent storage
+- **Filtering**: Dynamically handled using `tkinter` widgets
+- **Graphs**: Generated with `matplotlib`
+- **Automatic Price Formatting**: Extracts prices in `€xx.xx` format using regular expressions (`re` module)
 
-Viel Spaß mit dem Lego Speed Champions Tracker! 🚗💨
+## 💡 Usage Notes
+- When editing or adding a set, all required fields must be filled in.
+- The JSON file is **automatically updated**, so changes persist after restarting the application.
+- If issues occur, check the **JSON file** for proper formatting.
+
+Enjoy using the Lego Speed Champions Tracker! 🚗💨
 
 
