@@ -33,7 +33,7 @@
         "Release Date": "08.2022",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/007-aston-martin-db5-76911"
@@ -46,7 +46,7 @@
         "Release Date": "01.2020",
         "Price": "€19.99",
         "Notes": "December 31st 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76897"
@@ -62,7 +62,7 @@
         "Width": "6",
         "Car Count": "1",
         "URL": "https://www.lego.com/en-us/product/75872",
-        "Owned": true
+        "Owned": false
     },
     {
         "Brand": "Audi",
@@ -72,7 +72,7 @@
         "Release Date": "03.2016",
         "Price": "€14.99",
         "Notes": "December 31st, 2017",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75873"
@@ -85,7 +85,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/audi-s1-e-tron-quattro-76921"
@@ -98,7 +98,7 @@
         "Release Date": "03.2016",
         "Price": "€14.99",
         "Notes": "December 31st, 2017",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75870"
@@ -111,7 +111,7 @@
         "Release Date": "03.2016",
         "Price": "€34.99",
         "Notes": "December 31st, 2017",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75874"
@@ -150,7 +150,7 @@
         "Release Date": "01.2019",
         "Price": "€39.99",
         "Notes": "July 31st, 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/75893"
@@ -163,7 +163,7 @@
         "Release Date": "03.2025",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/77242"
@@ -189,7 +189,7 @@
         "Release Date": "03.2025",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/77244"
@@ -267,7 +267,7 @@
         "Release Date": "03.2025",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/77246"
@@ -296,7 +296,7 @@
         "Width": "8",
         "Car Count": "1",
         "URL": "https://www.lego.com/en-us/product/30709",
-        "Owned": true
+        "Owned": false
     },
     {
         "Brand": "Ferrari",
@@ -306,7 +306,7 @@
         "Release Date": "03.2022",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76906"
@@ -319,7 +319,7 @@
         "Release Date": "03.2023",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76914"
@@ -332,7 +332,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76934"
@@ -345,7 +345,7 @@
         "Release Date": "01.2020",
         "Price": "€19.99",
         "Notes": "December 31st 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76895"
@@ -358,7 +358,7 @@
         "Release Date": "03.2015",
         "Price": "€14.99",
         "Notes": "December 31st, 2016",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75908"
@@ -371,7 +371,7 @@
         "Release Date": "03.2015",
         "Price": "€14.99",
         "Notes": "December 31st, 2016",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75899"
@@ -436,7 +436,7 @@
         "Release Date": "03.2018",
         "Price": "€99.99",
         "Notes": "December 31st, 2019",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 3,
         "URL": "https://www.lego.com/en-us/product/75889"
@@ -449,7 +449,7 @@
         "Release Date": "01.2019",
         "Price": "€14.99",
         "Notes": "July 31st, 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75890"
@@ -462,7 +462,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76920"
@@ -475,7 +475,7 @@
         "Release Date": "06.2021",
         "Price": "0",
         "Notes": "December 31st 2022",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/76905"
@@ -488,7 +488,7 @@
         "Release Date": "03.2016",
         "Price": "€14.99",
         "Notes": "December 31st, 2017",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75871"
@@ -514,7 +514,7 @@
         "Release Date": "03.2017",
         "Price": "€34.99",
         "Notes": "December 31st, 2018",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/75881"
@@ -527,7 +527,7 @@
         "Release Date": "03.2018",
         "Price": "€14.99",
         "Notes": "December 31st, 2019",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75884"
@@ -540,7 +540,7 @@
         "Release Date": "03.2018",
         "Price": "€14.99",
         "Notes": "December 31st, 2019",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75885"
@@ -566,7 +566,7 @@
         "Release Date": "01.2020",
         "Price": "0",
         "Notes": "December 31st 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/76898"
@@ -579,7 +579,7 @@
         "Release Date": "06.2021",
         "Price": "€24.99",
         "Notes": "December 31st 2023",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76900"
@@ -592,7 +592,7 @@
         "Release Date": "01.2020",
         "Price": "0",
         "Notes": "December 31st 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/76899"
@@ -605,7 +605,7 @@
         "Release Date": "03.2022",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76908"
@@ -618,7 +618,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76923"
@@ -644,7 +644,7 @@
         "Release Date": "03.2022",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76907"
@@ -696,7 +696,7 @@
         "Release Date": "03.2023",
         "Price": "0",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/76918"
@@ -709,7 +709,7 @@
         "Release Date": "06.2021",
         "Price": "€24.99",
         "Notes": "December 31st 2022",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76902"
@@ -722,7 +722,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76919"
@@ -735,7 +735,7 @@
         "Release Date": "03.2015",
         "Price": "€14.99",
         "Notes": "December 31st, 2016",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75909"
@@ -748,7 +748,7 @@
         "Release Date": "03.2017",
         "Price": "€14.99",
         "Notes": "December 31st, 2018",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75880"
@@ -761,7 +761,7 @@
         "Release Date": "01.2019",
         "Price": "€14.99",
         "Notes": "July 31st, 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75892"
@@ -826,7 +826,7 @@
         "Release Date": "03.2022",
         "Price": "0",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/76909"
@@ -839,7 +839,7 @@
         "Release Date": "03.2017",
         "Price": "€14.99",
         "Notes": "December 31st, 2018",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75877"
@@ -852,7 +852,7 @@
         "Release Date": "03.2024",
         "Price": "€24.99",
         "Notes": "TBA",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76935"
@@ -865,7 +865,7 @@
         "Release Date": "01.2020",
         "Price": "€19.99",
         "Notes": "December 31st 2021",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76896"
@@ -878,7 +878,7 @@
         "Release Date": "01.2023",
         "Price": "€24.99",
         "Notes": "2 Fast 2 Furious",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76917"
@@ -904,7 +904,7 @@
         "Release Date": "03.2023",
         "Price": "€24.99",
         "Notes": "December 31st 2024",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76916"
@@ -917,7 +917,7 @@
         "Release Date": "03.2015",
         "Price": "€14.99",
         "Notes": "December 31st, 2016",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75910"
@@ -956,7 +956,7 @@
         "Release Date": "03.2018",
         "Price": "€14.99",
         "Notes": "December 31st, 2019",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/75887"
@@ -969,7 +969,7 @@
         "Release Date": "03.2018",
         "Price": "€39.99",
         "Notes": "December 31st, 2019",
-        "Owned": true,
+        "Owned": false,
         "Width": 6,
         "Car Count": 2,
         "URL": "https://www.lego.com/en-us/product/75888"
@@ -1008,7 +1008,7 @@
         "Release Date": "06.2021",
         "Price": "€24.99",
         "Notes": "December 31st 2022",
-        "Owned": true,
+        "Owned": false,
         "Width": 8,
         "Car Count": 1,
         "URL": "https://www.lego.com/en-us/product/76901"
