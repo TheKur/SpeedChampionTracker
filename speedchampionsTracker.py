@@ -33,6 +33,7 @@ class LegoTrackerApp:
                     data = json.load(file)
                     for item in data:
                         item["Price"] = self.extract_euro_price(item["Price"])
+                        item["Release Date"] = item["Release Date"].split(".")[1]  # Extract year from release date
                     return data
                 except json.JSONDecodeError:
                     return []
@@ -156,7 +157,22 @@ class LegoTrackerApp:
     
     def add_or_edit_entry(self):
         # Add or edit an entry
-        new_entry = {field: self.entries[field].get() for field in self.FIELDS}
+        new_entry = {}
+        for field in self.FIELDS:
+            value = self.entries[field].get().strip()
+            if field in ["Piece Count", "Width", "Car Count"]:
+                if not value.isdigit():
+                    messagebox.showwarning("Invalid input", f"Please enter a valid number for {field}.")
+                    return
+            elif field == "Release Date":
+                if not re.match(r'\d{2}\.\d{4}', value):
+                    messagebox.showwarning("Invalid input", "Please enter a valid date in the format mm.yyyy.")
+                    return
+            elif field == "Price":
+                if not re.match(r'€\d+(\.\d{2})?', value):
+                    messagebox.showwarning("Invalid input", "Please enter a valid price in the format €xx.xx.")
+                    return
+            new_entry[field] = value
         new_entry["Owned"] = self.own_var.get()
         
         if self.selected_index is not None:
@@ -244,9 +260,9 @@ class LegoTrackerApp:
             self.car_count_dropdown["values"] = car_counts
         elif selected_field == "Release Date":
             self.release_date_dropdown.grid()
-            release_dates = list(set(item["Release Date"] for item in self.lego_data))
-            release_dates.sort()
-            self.release_date_dropdown["values"] = release_dates
+            release_years = list(set(item["Release Date"] for item in self.lego_data))
+            release_years.sort()
+            self.release_date_dropdown["values"] = release_years
         else:
             self.filter_entry.grid()
     
